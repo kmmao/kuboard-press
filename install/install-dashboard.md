@@ -21,7 +21,7 @@ Kuboard 是 Kubernetes 的一款图形化管理界面。
 
 ## Kuboard v3 版本介绍
 
-* Kuboard v3.0 已经正式发布，相较于 Kuboard v2.0.x， Kuboard v3 最大的特点是支持多 Kubernetes 集群管理。 **建议您选择 [Kuboard v3](./v3/install.html)**。
+* Kuboard v3.0 已经正式发布，相较于 Kuboard v2.0.x， Kuboard v3 最大的特点是支持多 Kubernetes 集群管理，同时，在各个方面都比 v2.0.x 有了很大的改进。 **建议您选择 [Kuboard v3](./v3/install.html)**。
 
 * Kuboard v2.0.x 将进入长期维护阶段，如果碰到问题，用户仍然可以在群里找群主解决问题。如果您计划升级到 Kuboard v3，请参考 [从 v2.0.x 升级到 v3.0.x](./v3/install.html#从-v2.0.x-升级到-v3.0.x)
 
@@ -198,7 +198,7 @@ kubectl delete -f https://addons.kuboard.cn/metrics-server/0.3.7/metrics-server-
 
 ```bash
 # 如果您参考 www.kuboard.cn 提供的文档安装 Kuberenetes，可在第一个 Master 节点上执行此命令
-echo $(kubectl -n kube-system get secret $(kubectl -n kube-system get secret | grep kuboard-user | awk '{print $1}') -o go-template='{{.data.token}}' | base64 -d)
+echo $(kubectl -n kube-system get secret $(kubectl -n kube-system get secret | grep ^kuboard-user | awk '{print $1}') -o go-template='{{.data.token}}' | base64 -d)
 ```
 
 **输出**
@@ -227,7 +227,7 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiw
 
 ```bash
 # 如果您参考 www.kuboard.cn 提供的文档安装 Kuberenetes，可在第一个 Master 节点上执行此命令
-echo $(kubectl -n kube-system get secret $(kubectl -n kube-system get secret | grep kuboard-viewer | awk '{print $1}') -o go-template='{{.data.token}}' | base64 -d)
+echo $(kubectl -n kube-system get secret $(kubectl -n kube-system get secret | grep ^kuboard-viewer | awk '{print $1}') -o go-template='{{.data.token}}' | base64 -d)
 ```
 
 **输出**

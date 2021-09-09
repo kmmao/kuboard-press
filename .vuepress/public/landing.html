@@ -49,6 +49,13 @@
 <body>
 
 <style type="text/css">
+p img {
+    max-width: 720px;
+    margin: auto;
+    border: solid 1px #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
 .box{
     font-family: 'Merriweather Sans', sans-serif;
     overflow: hidden;
@@ -168,8 +175,8 @@
                             <li class="nav-item"> <a class="nav-link" href="/install/v3/install.html">安装</a> </li>
                             <li class="nav-item"> <a class="nav-link" href="/learning/">教程</a> </li>
                             <!-- <li class="nav-item"> <a class="nav-link" href="https://kubetrain.cn/?from=kuboard-homepage" target="_blank">培训</a> </li> -->
-                            <li class="nav-item"> <a class="nav-link" href="/support/">支持</a> </li>
-                            <li class="nav-item"> <a class="nav-link" href="https://forum.kuboard.cn" target="_blank">论坛</a> </li>
+                            <!-- <li class="nav-item"> <a class="nav-link" href="/support/">支持</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="https://forum.kuboard.cn" target="_blank">论坛</a> </li> -->
                             <!-- <li class="nav-item dropdown">
                                 <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -197,23 +204,21 @@
             <div class="row">
                 <div class="col-sm-6 col-md-7">
                     <div class="hero-content">
-                        <h1 class="text-primary">快速在 Kubernetes 上落地微服务</h1>
-                        <p class="text-primary mt-3"><span style="font-weight: 500;">Kubernetes：</span> 安装、教程、管理面板、微服务实战</p>
+                        <h1 class="text-primary">Kuboard - Kubernetes 多集群管理界面</h1>
+                        <!-- <p class="text-primary mt-3"><span style="font-weight: 500;">Kubernetes：</span> 安装、教程、管理面板、微服务实战</p> -->
                         <ul class="pair-btns-list">
-                            <!-- <li> <a class="cbtn btn-grad-s btn-shadow btn-width"
-                             target="_blank"
-                             href="https://demo.kuboard.cn/dashboard?k8sToken=eyJhbGciOiJSUzI1NiIsImtpZCI6InZ6SzVqZFNJOXZFMmxQSkhXamNBcFY4RU9FR0RvSUR5bzJIY0NwVG1zODQifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJrdWJvYXJkLXZpZXdlci10b2tlbi0yOW40cyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJrdWJvYXJkLXZpZXdlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjQzMWMwNmYyLTNiNTAtNGEyMy1hYjM1LTkyNDQwNTQ2NzFkZCIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTprdWJvYXJkLXZpZXdlciJ9.kgwTa6t00gNC0vgr6HOvCqkDghPcW-jVDg-_K6WLy97ppb9jvaqVz-AxXzF7mJqXnNetbJw-8-x_L3ogSsDlTKmRucao96VA2tPKxel8pM04J8MU0ZmYgWhTJelibbxmQK3jwGM4x32bckOOvmtumcXdsBRN0z1SZ1iu4H0VoaswhfoFS4ZJKoe61xyqoDhQx4RLCVJh_-Uctd5RCcPLWFEk-BHqC8vUTy8QcRst6RIIozQdTqsv7Xs6bH6dHrHFS--eVVTH2orQdm8znuUFhlqFOOjmCIMzIlaUQC_SO9URIGYOs0jrk27N9KC0HvQ5dLgFmwyNJ0Gu7cYi23NP1A">
-                             在线演示</a></li> -->
                              <li> <a class="cbtn btn-grad-s btn-shadow btn-width"
                                 target="_blank"
                                 href="https://demo.kuboard.cn/">
                                 在线演示</a></li>
                             <li><a href="/learning/" class="cbtn btn-grad btn-shadow btn-width">查看教程</a></li>
                         </ul>
-                        <p style="margin-top: 20px;">
-                            <a aria-label="github" href="https://starchart.cc/eip-work/kuboard-press" target="_blank" alt="Github Stars"><img src="https://badgen.net/github/stars/eip-work/kuboard-press?label=github&nbsp;stars"/></a>
-                            <a aria-label="github" href="https://hub.docker.com/r/eipwork/kuboard" target="_blank" alt="Docker Pulls"><img src="https://badgen.net/docker/pulls/eipwork/kuboard"/></a>
-                        </p>
+                        <div style="margin-top: 20px;">
+                            <a aria-label="github" href="https://starchart.cc/eip-work/kuboard-press" target="_blank" alt="Github Stars">
+                                <iframe style="display:inline-block;vertical-align:middle;" src="https://addons.kuboard.cn/downloads/github-star.html" frameborder="0" scrolling="0" width="120" height="20" title="GitHub"></iframe>
+                            </a>
+                            <a aria-label="github" href="https://hub.docker.com/r/eipwork/kuboard" target="_blank" alt="Docker Pulls"><img src="https://addons.kuboard.cn/downloads/docker-pull.svg"/></a>
+                        </div>
                         <p>
                             <div style="font-size: 13px; color: #666;">
                                 在线演示环境中，您具备 <span style="color: red; font-weight: bold">只读</span> 权限，只能体验 Kuboard 的一部分功能。<br/>
@@ -295,7 +300,7 @@
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a href="/learning/k8s-practice/micro-service/kuboard-view-of-k8s.html">
+                    <a href="/learning/k8s-practice/spring-blade/">
                     <div class="box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
                         <img src="landing/images/springcloud-p.png" alt="K8S教程_K8S培训_K8S安装手册_在Kubernetes上实战Spring_Cloud_活跃的OCP社区支持">
                         <div class="box-content">
@@ -340,70 +345,7 @@
     <!-- Features -->
     <div class="py-80" id="features">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="section-head text-center">
-                        <h1 class="text-primary">Kuboard for Kubernetes</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <!-- InfoBox Center  <Start> -->
-                    <div class="cs-infobox-left mt-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-                        <img src="landing/images/icn6.svg" alt="" class="img-fluid">
-                        <h4 class="text-primary">免费使用</h4>
-                        <p>无需缴纳高昂培训费，获得更高质量的免费 Kubernetes 教程</p>
-                    </div>
-                    <!-- InfoBox Center </End> -->
-                </div>
-                <div class="col-md-4">
-                    <!-- InfoBox Center  <Start> -->
-                    <div class="cs-infobox-left mt-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1600">
-                        <img src="landing/images/icn4.svg" alt="" class="img-fluid">
-                        <h4 class="text-primary">快速安装</h4>
-                        <p>使用每天有 300 多人验证的 Kubernetes 安装文档，快速完成安装，避免落坑。</p>
-                    </div>
-                    <!-- InfoBox Center </End> -->
-                </div>
-                <div class="col-md-4">
-                    <!-- InfoBox Left  <Start> -->
-                    <div class="cs-infobox-left mt-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
-                        <img src="landing/images/icn1.svg" alt="" class="img-fluid">
-                        <h4 class="text-primary">活跃的QQ社群</h4>
-                        <p>每天入群人数20人，发言记录6000+，各路大佬帮你解决问题。</p>
-                    </div>
-                    <!-- InfoBox Left </End> -->
-                </div>
-                <div class="col-md-4">
-                    <!-- InfoBox Center  <Start> -->
-                    <div class="cs-infobox-left mt-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1800">
-                        <img src="landing/images/icn5.svg" alt="" class="img-fluid">
-                        <h4 class="text-primary">管理面板</h4>
-                        <p>免费授权的 Kubernetes 微服务管理面板，降低 Kubernetes 的使用门槛，提升运维管理效率</p>
-                    </div>
-                    <!-- InfoBox Center </End> -->
-                </div>
-                <div class="col-md-4">
-                    <!-- InfoBox Center  <Start> -->
-                    <div class="cs-infobox-left mt-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
-                        <img src="landing/images/icn5.svg" alt="" class="img-fluid">
-                        <h4 class="text-primary">微服务参考架构</h4>
-                        <p>互联网企业微服务经典参考架构，无需反复摸索，快速起步</p>
-                    </div>
-                    <!-- InfoBox Center </End> -->
-                </div>
-                <div class="col-md-4">
-                    <!-- InfoBox Center  <Start> -->
-                    <div class="cs-infobox-left mt-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1400">
-                        <img src="landing/images/icn3.svg" alt="" class="img-fluid">
-                        <h4 class="text-primary">Spring Cloud 部署实战</h4>
-                        <p>使用 Kuboard 快速 Kubernetes 上完成 Spring Cloud 的部署和管理</p>
-                    </div>
-                    <!-- InfoBox Center </End> -->
-                </div>
-                
-            </div>
+
         </div>
     </div>
     <!-- /Features -->
@@ -415,17 +357,16 @@
                 <div class="container">
                     <div class="row" data-aos="zoom-in-up">
                         <div class="col-sm-12 text-center" style="max-width: 720px; margin: auto;">
-                            <!-- <img src="https://starchart.cc/eip-work/kuboard-press.svg" alt="Kubernetes教程_Kuboard_Github_Star"> -->
-                            <a href="https://starchart.cc/eip-work/kuboard-press" target="_blank">
-                                <img src="https://starchart.cc/eip-work/kuboard-press.svg" alt="" class="img-fluid box-shadow" style="border: solid 2px #f2be45; padding: 2rem; background-color: #fff; border-radius: 6px; height: 420px;">
-                            </a>
+                                <img src="https://addons.kuboard.cn/downloads/kuboard-press.svg" alt="" class="img-fluid box-shadow" style="border: solid 2px #f2be45; padding: 2rem; background-color: #fff; border-radius: 6px; height: 420px;">
                             <!-- <a class="venobox vbox-item video-play" data-autoplay="true" data-vbtype="video" href="https://youtu.be/kubGCSj5y3k">
                                 <img src="landing/images/trend.png" alt="" class="img-fluid" style="border: solid 1px #eee;">
                                 <div class="vid-fixed-icn"><img src="landing/images/video-thumb.png" alt="" class="img-fluid"></div>
                             </a> -->
                         </div>
                     </div>
-                    <p style="margin-top: 20px; text-align: center;"><a aria-label="github"><iframe src="https://ghbtns.com/github-btn.html?user=eip-work&amp;repo=kuboard-press&amp;type=star&amp;count=true&amp;size=small" frameborder="0" scrolling="0" width="100px" height="20px" style="display:inline-block;vertical-align:middle;"></iframe></a></p>
+                    <p style="margin-top: 20px; text-align: center;"><a aria-label="github">
+                        <iframe style="display:inline-block;vertical-align:middle;" src="https://addons.kuboard.cn/downloads/github-star.html" frameborder="0" scrolling="0" width="120" height="20" title="GitHub"></iframe>
+                    </p>
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="slider single-item">
@@ -483,22 +424,96 @@
 
     <div class="py-80">
         <div class="custom-witdth-box" style="box-shadow: 2px 4px 20px 0px rgba(0, 0, 0, 0.1);">
-            <div class="content__default"><h1 id="kuboard简介"><a href="#kuboard简介" class="header-anchor">#</a> Kuboard简介</h1> <p>Kuboard 是一款基于 Kubernetes 的微服务管理界面。目的是帮助用户快速在 Kubernetes 上落地微服务。在 <a href="https://kuboard.cn" target="_blank" rel="nofollow" onclick="openOutboundLink(this)">https://kuboard.cn<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 上，您可以获得：</p> <ul><li>最新版本的 Kubernetes 安装文档</li> <li>免费的 Kubernetes 中文教程</li> <li>免费的 Kubernetes 图形化管理界面 Kuboard</li> <li>在 Kubernetes 上部署 Spring Cloud 的实战分享</li></ul> <h2 id="kubernetes安装文档"><a href="#kubernetes安装文档" class="header-anchor">#</a> Kubernetes安装文档</h2> <ul><li><a href="https://kuboard.cn/install/install-k8s.html">Kubernetes (K8S)v1.16.2 安装文档</a> <ul><li>每天超过 300 名网友参考此文档完成Kubernetes安装</li> <li>QQ群在线答疑</li></ul></li> <li><a href="https://kuboard.cn/install/install-kubernetes.html">Kubernetes 高可用安装文档</a></li> <li><a href="https://kuboard.cn/install/upgrade-k8s/1.15.x-1.16.x.html">Kubernetes升级到1.16.x</a></li> <li><a href="https://kuboard.cn/install/v3/install.html">Kuboard 安装文档</a></li></ul> <h2 id="kubernetes免费教程"><a href="#kubernetes免费教程" class="header-anchor">#</a> Kubernetes免费教程</h2> <p>Kubernetes教程的主要依据是：Kubernetes 文档，以及使用 Kuboard 落地 Spring Cloud 微服务的实战经验</p> <h3 id="kubernetes-介绍"><a href="#kubernetes-介绍" class="header-anchor">#</a> <strong>Kubernetes 介绍</strong></h3> <ul><li><a href="https://kuboard.cn/learning/k8s-bg/what-is-k8s.html">什么是Kubernetes</a></li> <li><a href="https://kuboard.cn/learning/k8s-bg/component.html">Kubernetes组件</a></li></ul> <h3 id="kubernetes入门"><a href="#kubernetes入门" class="header-anchor">#</a> Kubernetes入门</h3> <ul><li><a href="https://kuboard.cn/learning/k8s-basics/kubernetes-basics.html">0. 学习Kubernetes基础知识</a> (10分钟)
-            <ul><li><a href="https://kuboard.cn/learning/k8s-basics/deploy-app.html">1. 部署一个应用程序</a> (5分钟)</li> <li><a href="https://kuboard.cn/learning/k8s-basics/explore.html">2. 查看 Pods / Nodes</a> (10分钟)</li> <li><a href="https://kuboard.cn/learning/k8s-basics/expose.html">3. 公布应用程序</a> (10分钟)</li> <li><a href="https://kuboard.cn/learning/k8s-basics/scale.html">4. 伸缩应用程序</a> (10分钟)</li> <li><a href="https://kuboard.cn/learning/k8s-basics/update.html">5. 执行滚动更新</a> (10分钟)</li></ul></li> <li><a href="https://kuboard.cn/learning/k8s-basics/k8s-core-concepts.html">6. 复习Kubernetes核心概念</a> (10分钟)</li></ul> <h3 id="kubernetes进阶"><a href="#kubernetes进阶" class="header-anchor">#</a> Kubernetes进阶</h3> <ul><li>架构
-            <ul><li><a href="https://kuboard.cn/learning/k8s-bg/architecture/nodes.html">节点</a></li> <li><a href="https://kuboard.cn/learning/k8s-bg/architecture/com.html">集群内通信</a></li> <li><a href="https://kuboard.cn/learning/k8s-bg/architecture/controller.html">控制器</a></li></ul></li> <li>操作Kubernetes
-            <ul><li><a href="https://kuboard.cn/learning/k8s-intermediate/obj/k8s-object.html">什么是Kubernetes对象</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/obj/manage.html">管理Kubernetes对象</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/obj/names.html">名称</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/obj/namespaces.html">名称空间</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/obj/namespace-op.html">使用名称空间共享集群</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/obj/labels.html">标签和选择器</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/obj/annotations.html">注解</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/obj/field.html">字段选择器</a></li></ul></li> <li>容器
-            <ul><li><a href="https://kuboard.cn/learning/k8s-intermediate/container/images.html">容器镜像</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/container/env.html">容器的环境变量</a></li></ul></li> <li>工作负载
-            <ul><li><a href="https://kuboard.cn/learning/k8s-intermediate/workload/pod.html">容器组 - 概述</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/workload/pod-lifecycle.html">容器组 - 生命周期</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/workload/init-container.html">容器组 - 初始化容器</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/workload/workload.html">控制器 - 概述</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/workload/wl-deployment/">控制器 - Deployment</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/workload/wl-statefulset/">控制器 - StatefulSet</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/workload/wl-daemonset/">控制器 - DaemonSet</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/workload/wl-job/">控制器 - Job</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/workload/wl-cronjob/">控制器 - CronJob</a></li></ul></li> <li>服务发现、负载均衡、网络
-            <ul><li><a href="https://kuboard.cn/learning/k8s-intermediate/service/service.html">Service</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/service/service-details.html">Service 详细描述</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/service/service-types.html">Service 类型</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/service/dns.html">Service/Pod 的 DNS</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/service/host-alias.html">配置Pod的 /etc/hosts</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/service/connecting.html">Service 连接应用程序</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/service/ingress.html">Ingress 通过互联网访问您的应用</a></li></ul></li> <li>存储
-            <ul><li><a href="https://kuboard.cn/learning/k8s-intermediate/persistent/volume.html">数据卷 Volume</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/persistent/pv.html">存储卷 PV 和存储卷声明 PVC</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/persistent/storage-class.html">存储类 StorageClass</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/persistent/nfs.html">自建 NFS 服务</a></li></ul></li> <li>配置
-            <ul><li><a href="https://kuboard.cn/learning/k8s-intermediate/private-registry.html">使用私有 registry 中的 docker 镜像</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/config/config-map.html">使用 ConfigMap 配置您的应用程序</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/config/computing-resource.html">管理容器的计算资源</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/config/assign-pod-node.html">将容器调度到指定的节点</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/config/taints-toleration/">污点和容忍 taints and toleration</a></li> <li><a href="https://kuboard.cn/learning/k8s-intermediate/config/secrets/">Secrets</a></li></ul></li></ul> <h3 id="kubernetes高级"><a href="#kubernetes高级" class="header-anchor">#</a> Kubernetes高级</h3> <ul><li>问题诊断
-            <ul><li><a href="https://kuboard.cn/learning/k8s-advanced/ts/application.html">诊断应用程序</a></li> <li><a href="https://kuboard.cn/learning/k8s-advanced/ts/cluster.html">诊断集群问题</a></li></ul></li> <li>日志
-            <ul><li><a href="https://kuboard.cn/learning/k8s-advanced/logs/">日志</a></li></ul></li> <li>调度
-            <ul><li><a href="https://kuboard.cn/learning/k8s-advanced/schedule/">调度</a></li> <li><a href="https://kuboard.cn/learning/k8s-advanced/schedule/tuning.html">调度调优</a></li> <li><a href="https://kuboard.cn/learning/k8s-advanced/schedule/framework.html">调度框架</a></li></ul></li> <li>策略
-            <ul><li><a href="https://kuboard.cn/learning/k8s-advanced/policy/lr.html">Limit Range</a></li> <li><a href="https://kuboard.cn/learning/k8s-advanced/policy/rq.html">Resource Quota</a></li></ul></li> <li>安全</li> <li>监控</li> <li>联邦</li></ul> <h3 id="kubernetes实战"><a href="#kubernetes实战" class="header-anchor">#</a> Kubernetes实战</h3> <p>在 Kubernetes 上部署 Spring Cloud 微服务：</p> <ul><li><a href="https://kuboard.cn/learning/k8s-practice/spring-cloud/">概述</a></li></ul> <p>在 Kubernetes 上部署 Spring Cloud 微服务：(Open Capacity Platform)</p> <ul><li>准备
-            <ul><li><a href="https://kuboard.cn/learning/k8s-practice/ocp/prepare.html">准备OCP的构建环境和部署环境</a></li> <li><a href="https://kuboard.cn/learning/k8s-practice/ocp/build.html">构建docker镜像并推送到仓库</a></li></ul></li> <li>部署
-            <ul><li><a href="https://kuboard.cn/learning/k8s-practice/ocp/sequence.html">部署顺序</a></li> <li><a href="https://kuboard.cn/learning/k8s-practice/ocp/eureka-server.html">在K8S上部署eureka-server</a></li> <li><a href="https://kuboard.cn/learning/k8s-practice/ocp/mysql.html">在K8S上部署mysql</a></li> <li><a href="https://kuboard.cn/learning/k8s-practice/ocp/redis.html">在K8S上部署redis</a></li> <li><a href="https://kuboard.cn/learning/k8s-practice/ocp/auth-server.html">在K8S上部署auth-server</a></li> <li><a href="https://kuboard.cn/learning/k8s-practice/ocp/user-center.html">在K8S上部署user-center</a></li> <li><a href="https://kuboard.cn/learning/k8s-practice/ocp/api-gateway.html">在K8S上部署api-gateway</a></li> <li><a href="https://kuboard.cn/learning/k8s-practice/ocp/back-center.html">在K8S上部署back-center</a></li> <li><a href="https://kuboard.cn/learning/k8s-practice/ocp/review.html">重新审视配置信息</a></li></ul></li> <li>多环境
-            <ul><li><a href="https://kuboard.cn/learning/k8s-practice/ocp/export.html">导出部署配置</a></li> <li><a href="https://kuboard.cn/learning/k8s-practice/ocp/import.html">导入部署配置</a></li></ul></li></ul> <p>Kuboard免费提供Kubernetes教程、K8S教程、K8S安装文档、Kubernetes+SpringCloud实战文档，学习过程中如有疑问，请加QQ群在线答疑。</p></div>
+            <div class="content__default">
+                <h3 id="kuboard-for-kubernetes">Kuboard for Kubernetes
+                </h3>
+                <div
+                  style="padding: 10px; border: 1px solid rgb(238, 238, 238); border-radius: 10px; margin: 10px 0px; background-color: rgb(250, 250, 250);">
+                  <a href="https://demo.kuboard.cn" target="_blank">https://demo.kuboard.cn</a> <br>
+                  <div style="width: 60px; display: inline-block; margin-top: 5px;">用&nbsp;户</div>
+                  demo <br>
+                  <div style="width: 60px; display: inline-block;">密&nbsp;码</div>
+                  demo123
+                </div>
+                <h3 id="特点介绍">特点介绍</h3>
+                <p>相较于 Kubernetes Dashboard 等其他 Kubernetes 管理界面，Kuboard 的主要特点有：</p>
+                <ul>
+                  <li>
+                    <p>多种认证方式</p>
+                    <p>Kuboard 可以使用内建用户库、gitlab / github 单点登录或者 LDAP 用户库进行认证，避免管理员将 ServiceAccount 的 Token
+                      分发给普通用户而造成的麻烦。使用内建用户库时，管理员可以配置用户的密码策略、密码过期时间等安全设置。</p>
+                    <p><img src="/images/intro.assets/image-20210405162940278.png" alt="Kuboard登录界面"></p>
+                  </li>
+                  <li>
+                    <p>多集群管理</p>
+                    <p>管理员可以将多个 Kubernetes 集群导入到 Kuboard 中，并且通过权限控制，将不同集群/名称空间的权限分配给指定的用户或用户组。</p>
+                    <p><img src="/images/intro.assets/image-20210405164029151.png" alt="Kuboard集群列表页"></p>
+                  </li>
+                  <li>
+                    <p>微服务分层展示</p>
+                    <p>在 Kuboard 的名称空间概要页中，以经典的微服务分层方式将工作负载划分到不同的分层，更加直观地展示微服务架构的结构，并且可以为每一个名称空间自定义名称空间布局。</p>
+                    <p><img src="/images/intro.assets/image-20210405164532452.png" alt="Kuboard-微服务分层"></p>
+                  </li>
+                  <li>
+                    <p>工作负载的直观展示</p>
+                    <p>Kuboard 中将 Deployment 的历史版本、所属的 Pod 列表、Pod 的关联事件、容器信息合理地组织在同一个页面中，可以帮助用户最快速的诊断问题和执行各种相关操作。</p>
+                    <p><img src="/images/intro.assets/image-20210405180147614.png" alt="Kuboard-工作负载详情"></p>
+                  </li>
+                  <li>
+                    <p>工作负载编辑</p>
+                    <p>Kuboard 提供了图形化的工作负载编辑界面，用户无需陷入繁琐的 YAML 文件细节中，即可轻松完成对容器的编排任务。支持的 Kubernetes
+                      对象类型包括：Node、Namespace、Deployment、StatefulSet、DaemonSet、Secret、ConfigMap、Service、Ingress、StorageClass、PersistentVolumeClaim、LimitRange、ResourceQuota、ServiceAccount、Role、RoleBinding、ClusterRole、ClusterRoleBinding、CustomResourceDefinition、CustomResource
+                      等各类常用 Kubernetes 对象，</p>
+                    <p><img src="/images/intro.assets/image-20210405180800712.png" alt="Kuboard-工作负载编辑"></p>
+                  </li>
+                  <li>
+                    <p>存储类型支持</p>
+                    <p>在 Kuboard 中，可以方便地对接 NFS、CephFS 等常用存储类型，并且支持对 CephFS 类型的存储卷声明执行扩容和快照操作。</p>
+                    <p><img src="/images/intro.assets/image-20210405181928653.png" alt="Kuboard-存储类"></p>
+                  </li>
+                  <li>
+                    <p>丰富的互操作性</p>
+                    <p>可以提供许多通常只在 <code>kubectl</code> 命令行界面中才提供的互操作手段，例如：</p>
+                    <ul>
+                      <li>Top Nodes / Top Pods</li>
+                      <li>容器的日志、终端</li>
+                      <li>容器的文件浏览器（支持从容器中下载文件、上传文件到容器）</li>
+                      <li>KuboardProxy（在浏览器中就可以提供 <code>kubectl proxy</code> 的功能）</li>
+                    </ul>
+                    <p><img src="/images/intro.assets/image-20210405182805543.png" alt="Kuboard-文件浏览器"></p>
+                  </li>
+                  <li>
+                    <p>套件扩展</p>
+                    <p>Kuboard 提供了必要的套件库，使得用户可以根据自己的需要扩展集群的管理能力。当前提供的套件有：</p>
+                    <ul>
+                      <li>资源层监控套件，基于 Prometheus / Grafana 提供 K8S 集群的监控能力，可以监控集群、节点、工作负载、容器组等各个级别对象的 CPU、内存、网络、磁盘等资源的使用情况；</li>
+                      <li>日志聚合套件，基于 Grafana / Loki / Promtail 实现日志聚合；</li>
+                      <li>存储卷浏览器，查看和操作存储卷中的内容；</li>
+                    </ul>
+                    <p><img src="/images/intro.assets/image-20210405183652378.png" alt="Kuboard-套件扩展"></p>
+                  </li>
+                  <li>
+                    <p>告警配置</p>
+                    <p>可以通过界面直接配置资源层监控套件发送告警消息：</p>
+                    <ul>
+                      <li>支持邮件、微信发送告警消息；</li>
+                      <li>支持告警路由配置；</li>
+                      <li>支持告警规则配置等；</li>
+                    </ul>
+                    <p><img src="/images/intro.assets/alert-config.png" alt="Kuboard-告警配置"></p>
+                  </li>
+                  <li>
+                    <p>操作审计</p>
+                    <p>Kuboard 支持操作审计的功能：</p>
+                    <ul>
+                      <li>审计用户通过 Kuboard 界面和 Kuboard API 执行的操作；</li>
+                      <li>自定义审计规则；</li>
+                    </ul>
+                    <p><img src="/images/intro.assets/audit.png" alt="Kuboard-操作审计"></p>
+                  </li>
+                </ul>
+                <p>访问 Kuboard 网站 https://kuboard.cn 可以加入 Kuboard 社群，并获得帮助。</p>
+              </div>
         </div>
     </div>
 
@@ -520,29 +535,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="row">
-                <!-- <div class="col-sm-6 col-md-4 col-lg-3">
-                    <h4 class="footer-head">关于产品</h4>
-                    <ul class="footer-links">
-                        <li><a href="/support/" title="Link">授权与支持</a></li>
-                        <li><a href="/support/" title="Link">联系信息</a></li>
-                    </ul>
-                </div> -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <h4 class="footer-head">友情链接</h4>
-                    <ul class="footer-links">
-                        <li><a href="https://www.kubernetes.io" rel="nofollow" target="_blank" title="Link">Kubernetes </a></li>
-                        <li><a href="http://store.lameleg.com/?referrer=shaohq" target="_blank" title="Link">Sealyun 一键离线安装K8S</a></li>
-                        <li><a href="https://fuckcloudnative.io/?utm_source=kuboard.cn" target="_blank" title="Link">云原生实验室</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <h4 class="footer-head">联系我们</h4>
-                    <ul class="footer-links">
-                        <li><a href="mailto:shaohq@foxmail.com" title="Link">shaohq@foxmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
+
             <div class="copyright-bar clearfix" style="margin-bottom: 50px;">
                 <div class="row">
                     <!-- <div class="col-lg-6">

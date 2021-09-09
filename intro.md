@@ -9,12 +9,12 @@ Kuboard 是一款专为 Kubernetes 设计的免费管理界面，兼容 Kubernet
 
 <p>
   <a aria-label="github" href="https://starchart.cc/eip-work/kuboard-press" target="_blank">
-    <img src="https://badgen.net/github/stars/eip-work/kuboard-press?label=github stars"/>
+    <img src="https://addons.kuboard.cn/downloads/github-star.png"/>
   </a>
 </p>
 
 <a href="https://starchart.cc/eip-work/kuboard-press" target="_blank">
-  <img src="https://starchart.cc/eip-work/kuboard-press.svg" alt="Kubernetes教程_Kuboard_Github_Star" style="height: 320px; width: 540px;">
+  <img src="https://addons.kuboard.cn/downloads/kuboard-press.svg" alt="Kubernetes教程_Kuboard_Github_Star" style="height: 320px; width: 540px;">
 </a>
 
 点击这里可以查看 [Kuboard 的安装文档](https://kuboard.cn/install/v3/install.html)

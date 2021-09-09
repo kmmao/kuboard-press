@@ -62,9 +62,10 @@ let sidebar = {
           title: '配置 Kuboard v3',
           collapsable: true,
           children: [
-            'v3/auth-user-sso',
+            'v3/reset-password',
             'v3/proxy',
             'v3/tls',
+            'v3/auth-user-sso',
             'v3-upgrade',
           ]
         },
@@ -477,17 +478,18 @@ let sidebar = {
           ]
         },
         {
-          title: '监控',
+          title: '监控及告警',
           collapsable: true,
           children: [
-            'k8s-advanced/observe/kube-prometheus.html',
+            'k8s-advanced/observe/monitor.html',
+            'k8s-advanced/observe/alert.html',
           ]
         },
         {
           title: '扩展Kubernetes',
           collapsable: true,
           children: [
-            'k8s-advanced/extend/aggregation',
+            'k8s-advanced/extend/aggregation.html',
           ]
         },
       ]

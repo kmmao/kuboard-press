@@ -7,7 +7,7 @@ import 'vue2-animate/dist/vue2-animate.min.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import BootstrapVue from 'bootstrap-vue'
+import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
 
 import Container from './grid/Container'
 import Grid from './grid/Grid'
@@ -16,6 +16,7 @@ import defaults from './grid/utils/defaults'
 
 import Comp from './comp/index'
 import Cookies from 'js-cookie'
+import VueClipboard from 'vue-clipboard2'
 
 const VueFractionGrid = {
   install (Vue, options) {
@@ -33,8 +34,9 @@ export default ({
   router, // 当前应用的路由实例
   siteData // 站点元数据
 }) => {
-  
+  Vue.use(VueClipboard)
   Vue.use(BootstrapVue)
+  Vue.use(BootstrapVueIcons)
   Vue.use(VueFractionGrid, {
     approach: 'desktop-first',
     gutter: '1rem',
